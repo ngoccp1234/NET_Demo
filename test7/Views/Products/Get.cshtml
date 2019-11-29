@@ -1,0 +1,21 @@
+﻿@using test7.Models
+
+@{
+    ViewBag.Title = "Get";
+    var products = ViewBag.Products as List<Product>;
+
+}
+
+<h2>Get</h2>
+@foreach (var item in products)
+{
+    <ul>
+        <li>@item.Id</li>
+        <li>@item.Name</li>
+        <li>@item.Quantity</li>
+    </ul>
+}
+
+
+
+
